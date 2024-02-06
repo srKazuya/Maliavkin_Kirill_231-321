@@ -13,15 +13,14 @@
             <img src="./img/Logo_Polytech_rus_main.jpg" alt="">
             <h1>Домашняя работа: Hello, World!</h1>
         </div>
-    <main>
+    </header>
+    <main class="wrapper">
         <?php
         echo "Hello, World!";
         ?>
     </main>
-    <footer>
-        Создать веб-страницу с динамическим контентом. Загрузить код в удаленный репозиторий. Залить на хостинг.
+    <footer class="wrapper">
+        <p class="foot">Создать веб-страницу с динамическим контентом. Загрузить код в удаленный репозиторий. Залить на хостинг.</p>
     </footer>
-    </header>
-
 </body>
 </html>
