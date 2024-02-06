@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img {
+    height: 4rem;
+}
+main {
+    font-size: 4vh;
+}
+footer {
+    margin-top: 20rem;
+}
