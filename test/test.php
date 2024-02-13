@@ -74,6 +74,17 @@
     $d = '2a';
     var_dump($a == $b);
     var_dump($a === $b);
+    //masisve
+    $m3 = array(
+        1    => 1,
+        2  => "block",
+        3  => "Bstria",
+        4 => "austria",
+    );
+    sort($m3);
+    foreach ($m3 as $key => $value) {
+        echo $key.'-'. $value. '<br>';
+    };
     ?>
 </body>
 </html>
