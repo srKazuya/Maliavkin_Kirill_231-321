@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+.wrapper {
+    max-width: 300px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 8px;
+  }
+button {
+  grid-column: span 2;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+.gridArea{
+  grid-column: span 1;
+}
+#output {
+  grid-column: span 6;
+}

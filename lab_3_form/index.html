@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <form id="form" action="https://httpbin.org/post" method="post">
+<body class="wrapper">
+    <form id="form" class="frm" action="//httpbin.org/post" method="post">
         <fieldset>
-            <label for="name">
-                <input type="text" name="name" id="name">
+            <legend class="form_legend">Личная информация</legend>
+            <label for="form_name">
+                <span class="form_txt">Ваше имя*</span>
+                <input class="frm_name" type="text" id="form_name" placeholder="Иванов Иван"
+                    name="name" value="">
             </label>
-            <label for="surname">
-                <input type="text" name="surname" id>
+            <label for="form_date">
+                <span class="form_txt">Дата рождения</span>
+                <input class="frm_name" type="date" id="form_date" name="date">
             </label>
-            <button type="submit">Отправитб</button>
-            <link rel="stylesheet" href="/back.php">
-        </fieldset>
     </form>
+    <button id="btn_form" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+    <a href="back.php">back.php</a>
 </body>
 </html>

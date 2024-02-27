@@ -74,6 +74,7 @@
     $d = '2a';
     var_dump($a == $b);
     var_dump($a === $b);
+    
     //masisve
     $m3 = array(
         1    => 1,
@@ -85,6 +86,44 @@
     foreach ($m3 as $key => $value) {
         echo $key.'-'. $value. '<br>';
     };
+
+
+
+    $m2 = [
+        [1, 2, 3],
+        ['one', 'two'],
+        ['a', 2, 'b', 4]
+    ];
+    var_dump($m2);
+
+//     foreach ($m2 as $arr) {
+//         foreach ($arr as $value) {
+//             echo $value.',';
+//     } echo '<br>';
+// } 
+    $m4[0] = 'blue';
+    $m4[1] = 'yellow';
+    for ($i = 0; $i < count($m3); $i++) {
+        echo $m4[$i].'<br>';
+    };$M[0]=100;
+
+    $M[1]=200;
+    
+    $M['red']='красный';
+    
+    $M[3]=NULL;
+    
+    $M[4]=FAlSE;
+    
+    $M[5]='';
+    
+    $M[8]=300;
+ 
+    foreach ($M as $key => $value) {
+        if (is_null($value)) {
+        echo $key.'-'. $value. '<br>'; 
+    }
+
     ?>
 </body>
 </html>
