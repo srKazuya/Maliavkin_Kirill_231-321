@@ -13,7 +13,7 @@
     preg_match_all('/(\w)\1+/', 'aaa bcd xxx efg', $matches);
     print_r($matches[0]).'<br>';
     //Задание 3
-    preg_match_all('/a(b+)a/', 'aa aba abba abbba abca abea', $matches);
+    preg_match_all('/\bab{1,3}a\b/', 'aa aba abba abbba abca abea abbbbba', $matches);
     print_r($matches[0]).'<br>';
     //Задание 4
     preg_match_all('/a\da/', 'a1a a2a a3a a4a a5a aba aca a114242412a', $matches);
